@@ -28,10 +28,18 @@ fetch(`${basePath}components/footer.html`)
 function setActiveNavLink() {
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   const navLinks = document.querySelectorAll('.nav-links a');
-  
+
   navLinks.forEach(link => {
-    if (link.getAttribute('href') === currentPage) {
+    const href = link.getAttribute('href') || '';
+    const linkPage = href.split('/').pop();
+    if (linkPage === currentPage) {
       link.classList.add('active');
+      // if link is inside a dropdown, also mark the parent
+      const parent = link.closest('.has-dropdown');
+      if (parent) {
+        const parentLink = parent.querySelector('a');
+        if (parentLink) parentLink.classList.add('active');
+      }
     }
   });
 }
