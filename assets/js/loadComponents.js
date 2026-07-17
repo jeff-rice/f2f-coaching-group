@@ -1,3 +1,16 @@
+/**
+ * loadComponents.js
+ * 
+ * Dynamically loads shared components (navbar and footer) into pages.
+ * This allows for centralized component management without duplicating HTML.
+ * 
+ * Features:
+ * - Automatically detects current page depth (root vs /pages/)
+ * - Loads navbar and footer components from /components/ folder
+ * - Sets active navigation link based on current page
+ * - Updates copyright year in footer dynamically
+ */
+
 // Determine the correct path based on current location
 const isInSubfolder = window.location.pathname.includes('/pages/');
 const basePath = isInSubfolder ? '../' : '';
@@ -24,7 +37,11 @@ fetch(`${basePath}components/footer.html`)
   })
   .catch(error => console.error('Error loading footer:', error));
 
-// Highlight the active page in nav
+/**
+ * Highlights the active page link in the navbar
+ * Compares current URL with href attributes to mark the current page
+ * Also marks parent menu items if link is in a dropdown
+ */
 function setActiveNavLink() {
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   const navLinks = document.querySelectorAll('.nav-links a');
