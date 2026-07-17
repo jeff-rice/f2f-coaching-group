@@ -329,7 +329,7 @@ section {
 }
 
 .logo-img {
-    height: 60px;
+    height: 80px;
     width: auto;
 }
 
@@ -1919,4 +1919,464 @@ section {
     .about-cta-buttons {
         flex-direction: column;
     }
+}
+
+/* =================================================================
+   SERVICES PAGE STYLES
+   ================================================================ */
+
+.services-section {
+    padding: var(--spacing-2xl) 0;
+}
+
+.services-subsection {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.services-subsection h2 {
+    margin-bottom: var(--spacing-lg);
+    color: var(--navy-deep);
+}
+
+.service-card {
+    background: var(--white);
+    border: 1px solid var(--silver-light);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition-normal);
+}
+
+.service-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.service-card h3 {
+    color: var(--navy-deep);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.service-card h3::before {
+    content: "✓";
+    color: var(--red-primary);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.service-card p {
+    color: var(--gray-text);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.service-features {
+    list-style: none;
+    margin-left: 0;
+}
+
+.service-features li {
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+    color: var(--gray-text);
+}
+
+.service-features li::before {
+    content: "•";
+    color: var(--red-primary);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.process-step {
+    background: linear-gradient(135deg, var(--navy-medium) 0%, var(--navy-deep) 100%);
+    color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+}
+
+.step-number {
+    font-size: var(--text-3xl);
+    font-weight: bold;
+    color: var(--silver);
+    margin-bottom: var(--spacing-md);
+}
+
+.process-step h4 {
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+}
+
+.process-step p {
+    color: var(--silver-light);
+    margin: 0;
+}
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.coaching-type-card {
+    background: var(--silver-light);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    border-left: 5px solid var(--red-primary);
+}
+
+.coaching-type-card h4 {
+    color: var(--navy-deep);
+    margin-bottom: var(--spacing-sm);
+}
+
+.coaching-type-card p {
+    color: var(--gray-text);
+    font-size: var(--text-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.perfect-for {
+    background: var(--white);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius);
+    font-size: var(--text-sm);
+    color: var(--navy-deep);
+    font-style: italic;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, var(--red-primary) 0%, var(--red-dark) 100%);
+    color: var(--white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    margin-top: var(--spacing-2xl);
+}
+
+.cta-box h3 {
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-box p {
+    color: var(--white);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--text-lg);
+}
+
+/* =================================================================
+   CONTACT PAGE STYLES
+   ================================================================ */
+
+.contact-section {
+    padding: var(--spacing-2xl) 0;
+}
+
+.coach-selection {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coach-btn {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: 2px solid var(--navy-light);
+    background: var(--white);
+    color: var(--navy-deep);
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+    font-size: var(--text-lg);
+    font-weight: 600;
+    transition: all var(--transition-normal);
+    min-width: 200px;
+}
+
+.coach-btn:hover {
+    border-color: var(--red-primary);
+    background: var(--red-light);
+    color: var(--white);
+}
+
+.coach-btn.active {
+    border-color: var(--red-primary);
+    background: var(--red-primary);
+    color: var(--white);
+}
+
+.coach-content {
+    display: none;
+    animation: fadeIn var(--transition-normal);
+}
+
+.coach-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.booking-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.booking-card {
+    background: var(--silver-light);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    border: 2px solid transparent;
+    transition: all var(--transition-normal);
+}
+
+.booking-card:hover {
+    border-color: var(--red-primary);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.booking-card h3 {
+    color: var(--navy-deep);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.booking-card h3::before {
+    content: "📅";
+    font-size: 1.5em;
+}
+
+.booking-card.lesson h3::before {
+    content: "🎳";
+}
+
+.booking-card h4 {
+    color: var(--red-primary);
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--spacing-md);
+}
+
+.booking-card p {
+    color: var(--gray-text);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.booking-features {
+    list-style: none;
+    margin-bottom: var(--spacing-lg);
+}
+
+.booking-features li {
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+    color: var(--gray-text);
+    font-size: var(--text-sm);
+}
+
+.booking-features li::before {
+    content: "✓";
+    color: var(--red-primary);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.note {
+    background: var(--navy-light);
+    color: var(--white);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius);
+    font-size: var(--text-sm);
+    margin-top: var(--spacing-md);
+    padding-left: var(--spacing-md);
+}
+
+.contact-form-section {
+    background: var(--white);
+    border: 1px solid var(--silver-light);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-2xl);
+    margin-top: var(--spacing-2xl);
+}
+
+.contact-form-section h3 {
+    color: var(--navy-deep);
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    color: var(--navy-deep);
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--silver-dark);
+    border-radius: var(--border-radius);
+    font-family: var(--font-primary);
+    font-size: var(--text-base);
+    color: var(--gray-text);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--red-primary);
+    box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
+}
+
+.coach-content .coach-info {
+    background: var(--navy-light);
+    color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.coach-content .coach-info h4 {
+    color: var(--silver);
+    margin-bottom: var(--spacing-sm);
+}
+
+.coach-content .coach-info p {
+    color: var(--silver-light);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--text-sm);
+}
+
+.coach-content .coach-info a {
+    color: var(--silver);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.coach-content .coach-info a:hover {
+    color: var(--red-light);
+}
+
+.faq-section {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-2xl);
+    border-top: 2px solid var(--silver-light);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.faq-item {
+    background: var(--silver-light);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    border-left: 4px solid var(--red-primary);
+}
+
+.faq-item h4 {
+    color: var(--navy-deep);
+    margin-bottom: var(--spacing-sm);
+}
+
+.faq-item p {
+    color: var(--gray-text);
+    margin: 0;
+    font-size: var(--text-sm);
+    line-height: 1.6;
+}
+
+/* =================================================================
+   UTILITY HELPER CLASSES
+   ================================================================ */
+
+/* Text alignment utilities */
+.text-center-section h2,
+.section-heading-center {
+    text-align: center;
+}
+
+/* Spacing utilities */
+.heading-bottom-lg {
+    margin-bottom: var(--spacing-xl);
+}
+
+.text-italic-md {
+    font-style: italic;
+    margin-top: var(--spacing-md);
+}
+
+/* Form select styling */
+.form-group select {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--silver-dark);
+    border-radius: var(--border-radius);
+    font-family: var(--font-primary);
+    font-size: var(--text-base);
+    color: var(--gray-text);
+}
+
+/* Button variant for light background */
+.btn-primary-inverted {
+    background-color: var(--white);
+    color: var(--red-primary);
+}
+
+.btn-primary-inverted:hover {
+    background-color: var(--silver-light);
+    color: var(--red-primary);
+}
+
+/* Link styling for emphasis */
+.link-emphasis {
+    color: var(--red-primary);
+    font-weight: 600;
+}
+
+.link-emphasis:hover {
+    color: var(--red-dark);
 }
