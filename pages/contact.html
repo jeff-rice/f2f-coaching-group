@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - F2F Coaching Group</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- All page-specific styles are in assets/css/styles.css under CONTACT PAGE STYLES section -->
+</head>
+
+<body>
+    <!-- Navbar component loaded dynamically by loadComponents.js -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Page Header/Intro Section -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Schedule Your Session</h1>
+            <p class="page-subtitle">
+                Choose your coach and select whether you'd like a free consultation or to book a lesson.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <!-- Coach Selection -->
+            <div class="coach-selection">
+                <button class="coach-btn active" onclick="selectCoach('jeff', event)">Coach Jeff</button>
+                <button class="coach-btn" onclick="selectCoach('rob', event)">Coach Rob</button>
+            </div>
+
+            <!-- Coach Jeff Content -->
+            <div id="jeff-content" class="coach-content active">
+                <h2 class="section-heading-center heading-bottom-lg">Schedule With Coach Jeff</h2>
+                
+                <div class="booking-options">
+                    <div class="booking-card">
+                        <h3>Free Consultation</h3>
+                        <h4>First-Time Clients</h4>
+                        <p>
+                            Not sure where to start? Book a complimentary 30-minute consultation to discuss 
+                            your goals and see if we're a good fit.
+                        </p>
+                        <ul class="booking-features">
+                            <li>Watch you bowl to assess your current technique</li>
+                            <li>Discuss your bowling goals and experience level</li>
+                            <li>Talk about any specific challenges you're facing</li>
+                            <li>Determine if we're a good match</li>
+                            <li>Review lesson options and pricing</li>
+                        </ul>
+                        <a href="https://calendly.com/jeff-rice81/free-bowling-consultation-with-coach-jeff" target="_blank" class="btn btn-primary">Book Free Consultation</a>
+                        <div class="note">No pressure, no obligation - just a chance to meet and see if coaching is right for you!</div>
+                    </div>
+
+                    <div class="booking-card lesson">
+                        <h3>Book a Lesson</h3>
+                        <h4>Returning Clients</h4>
+                        <p>
+                            Ready to take your game to the next level? Schedule a personalized 60-minute 
+                            coaching session tailored to your goals.
+                        </p>
+                        <ul class="booking-features">
+                            <li>Customized instruction based on your skill level</li>
+                            <li>Work on mechanics, footwork, and release</li>
+                            <li>Video feedback available as an add-on</li>
+                            <li>Tips for adjusting to lane conditions</li>
+                            <li>Open to all ages and skill levels</li>
+                        </ul>
+                        <a href="https://calendly.com/jeff-rice81/bowling-lesson" target="_blank" class="btn btn-primary">Schedule a Lesson</a>
+                        <div class="note">First-time clients should book a free consultation first.</div>
+                    </div>
+                </div>
+
+                <div class="coach-info">
+                    <h4>Contact Coach Jeff</h4>
+                    <p><strong>Email:</strong> <a href="mailto:coachjeff@f2fcoachinggroup.com">coachjeff@f2fcoachinggroup.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">Contact via email for scheduling</a></p>
+                    <p class="text-italic-md">For immediate booking, please use the calendar links above.</p>
+                </div>
+            </div>
+
+            <!-- Coach Rob Content -->
+            <div id="rob-content" class="coach-content">
+                <h2 class="section-heading-center heading-bottom-lg">Schedule With Coach Rob</h2>
+                
+                <div class="booking-options">
+                    <div class="booking-card">
+                        <h3>Free Consultation</h3>
+                        <h4>First-Time Clients</h4>
+                        <p>
+                            Not sure where to start? Book a complimentary 30-minute consultation to discuss 
+                            your goals and see if we're a good fit.
+                        </p>
+                        <ul class="booking-features">
+                            <li>Watch you bowl to assess your current technique</li>
+                            <li>Discuss your bowling goals and experience level</li>
+                            <li>Talk about any specific challenges you're facing</li>
+                            <li>Determine if we're a good match</li>
+                            <li>Review lesson options and pricing</li>
+                        </ul>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSejRVFztJKx8AP_jx5UcxyP9vyuNzjnfp_yjequdw0lsX2TDw/viewform" target="_blank" class="btn btn-primary">Book Free Consultation</a>
+                        <div class="note">No pressure, no obligation - just a chance to meet and see if coaching is right for you!</div>
+                    </div>
+
+                    <div class="booking-card lesson">
+                        <h3>Book a Lesson</h3>
+                        <h4>Returning Clients</h4>
+                        <p>
+                            Ready to take your game to the next level? Schedule a personalized 60-minute 
+                            coaching session tailored to your goals.
+                        </p>
+                        <ul class="booking-features">
+                            <li>Customized instruction based on your skill level</li>
+                            <li>Work on mechanics, footwork, and release</li>
+                            <li>Video feedback available as an add-on</li>
+                            <li>Tips for adjusting to lane conditions</li>
+                            <li>Open to all ages and skill levels</li>
+                        </ul>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSejRVFztJKx8AP_jx5UcxyP9vyuNzjnfp_yjequdw0lsX2TDw/viewform" target="_blank" class="btn btn-primary">Schedule a Lesson</a>
+                        <div class="note">First-time clients should book a free consultation first.</div>
+                    </div>
+                </div>
+
+                <div class="coach-info">
+                    <h4>Contact Coach Rob</h4>
+                    <p><strong>Email:</strong> <a href="mailto:coachrob@f2fcoachinggroup.com">coachrob@f2fcoachinggroup.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">Contact via email for scheduling</a></p>
+                    <p class="text-italic-md">For immediate booking, please use the calendar links above.</p>
+                </div>
+            </div>
+
+            <!-- General Contact Form -->
+            <div class="contact-form-section">
+                <h3>Other Inquiries</h3>
+                <p>Have a question that's not about scheduling? Feel free to reach out to us below.</p>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="coach">Preferred Coach</label>
+                        <select id="coach" name="coach">
+                            <option value="">Select a coach</option>
+                            <option value="jeff">Coach Jeff</option>
+                            <option value="rob">Coach Rob</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>How long is a typical coaching session?</h4>
+                        <p>A typical coaching session is 1-hour in length.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What can I expect from my first lesson?</h4>
+                        <p>During your first lesson, we'll work on fundamentals, assess your current technique, and begin building a personalized coaching plan based on your goals.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do you coach youth and adults?</h4>
+                        <p>Yes! We offer specialized coaching for both youth bowlers (18 and under) and adults.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do I need my own bowling ball and shoes?</h4>
+                        <p>It's helpful to have your own equipment, but it's not required. We can work with house equipment as well.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do I need to book a consultation before scheduling a lesson?</h4>
+                        <p>We recommend a consultation for first-time clients so we can discuss your goals and ensure we're a good fit. Returning clients can book lessons directly.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What are the coaching rates?</h4>
+                        <p>Visit our <a href="../pages/pricing.html" class="link-emphasis">Pricing page</a> for detailed information on all our coaching packages and rates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/assets/js/loadComponents.js"></script>
+    <script>
+        function selectCoach(coach, event) {
+            event.preventDefault();
+            
+            // Hide all content
+            document.getElementById('jeff-content').classList.remove('active');
+            document.getElementById('rob-content').classList.remove('active');
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.coach-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected content and mark button as active
+            if (coach === 'jeff') {
+                document.getElementById('jeff-content').classList.add('active');
+            } else if (coach === 'rob') {
+                document.getElementById('rob-content').classList.add('active');
+            }
+            
+            // Mark clicked button as active
+            event.target.classList.add('active');
+            
+            // Scroll to content
+            document.getElementById(coach + '-content').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
